@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+</head>
+
+<style>
+  * {
+    margin: o;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  body {
+    background-image: url(img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .left {
+    color: white;
+    font-size: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    margin-left: 7px;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    background: #6c696963;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 25px;
+  }
+
+  .btn {
+    background: linear-gradient(rgba(79, 12, 95, 0.959), rgb(87, 10, 138), rgb(3, 3, 71));
+    padding: 10px 25px;
+    color: white;
+    border: solid white 1px;
+    border-radius: 22px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .btn:hover {
+    background: transparent;
+    color: white;
+    font-size: 20px;
+  }
+
+  h2 {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects {
+    background: transparent;
+    color: white;
+    padding: 10px 25px;
+    border: solid white 1px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.4s;
+  }
+
+  .projects:hover {
+    background: rgba(48, 7, 75, 0.918);
+    font-size: 23px;
+  }
+
+  .skill {
+    background: rgba(48, 7, 75, 0.918);
+    color: white;
+    padding: 10px 15px;
+    font-size: 22px;
+    border: solid white 1px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .skill:hover {
+    background: transparent;
+    font-size: 23px;
+
+  }
+
+  h3 {
+    text-align: center;
+    color: rgb(235, 233, 233);
+  }
+</style>
+
+<body>
+  <nav>
+    <div class="left">
+      Portfolio
+    </div>
+
+    <div class="center">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+
+    <a href="sign-up.html">
+      <button id="btn" class="btn">
+        Sign Up
+      </button>
+    </a>
+
+  </nav>
+  <h2>Welcom To my Portfolio Website</h2>
+  <h3>Join my new projects today</h3>
+  <p> I am Abdulwahab, a Computer
+    Science student from Taraba State University and aspiring
+    Frontend Developer. I enjoy building responsive websites using
+    HTML, CSS, and JavaScript.
+  </p>
+  <div class="button">
+    <div>
+      <button class="projects">view projects</button>
+    </div>
+
+    <div>
+      <button class="skill">Skills</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

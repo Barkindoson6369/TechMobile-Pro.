@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up page</title>
+</head>
+
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-size: arial;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+
+  .form-box {
+    color: white;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .form-box {
+    background: rgba(48, 7, 75, 0.918);
+    width: 400px;
+    padding: 50px;
+    padding-right: 70px;
+    border-radius: 22px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(248, 248, 248, 0.3);
+
+  }
+
+  input {
+    width: 100%;
+    padding: 18px;
+    margin: 10px 0;
+    background: transparent;
+    border: solid white 1px;
+    color: white;
+    outline: none;
+    border-radius: 12px;
+    font-size: 19px;
+  }
+
+  input::placeholder {
+    color: gray;
+  }
+
+
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(255, 254, 254);
+  }
+
+  button {
+    width: 108%;
+    padding: 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: orange;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  button:hover {
+    background: rgb(214, 168, 82);
+  }
+
+  .back {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      justify-content: space-between;
+      text-decoration: none;
+      color: orange;
+      font-size: 25px;
+      padding-left: 12px;
+
+      &:hover {
+        color: white
+      }
+    }
+
+
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1>Create Account</h1>
+      <p>Join my new projects today</p>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Engr. Abdulwahab"><br>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Email"><br>
+
+      <label>Password</label>
+      <input type="password" placeholder="Create password"><br>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm password"><br>
+
+      <button>Register Now</button><br>
+      <br>
+      <div class="back">
+        <a href="Sign-In.html">Back To Login</a>
+        <a href="Websites.html">Back To Home</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

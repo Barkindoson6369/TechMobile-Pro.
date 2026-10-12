@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: arial;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(AB.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    color: rgb(19, 171, 218);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-box {
+    background: #6c696963;
+    width: 400px;
+    padding: 50px;
+    border-radius: 22px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(248, 248, 248, 0.3);
+  }
+
+  h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  input {
+    width: 100%;
+    padding: 18px;
+    margin: 10px 0;
+    background: transparent;
+    border: solid white 1px;
+    color: white;
+    outline: none;
+    border-radius: 12px;
+    font-size: 19px;
+  }
+
+  input::placeholder {
+    color: white;
+  }
+
+  button {
+    width: 100%;
+    padding: 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(19, 171, 218);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  button:hover {
+    background: #38a2cf;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 19px;
+    font-size: 22px;
+  }
+
+  .projects {
+    margin-bottom: 23px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(19, 171, 218);
+    font-size: 22px;
+  }
+</style>
+
+
+<body>
+  <div class="container">
+    <form class="form-box">
+      <h2>Login</h2>
+      <p class="projects">Join my new projects today</p>
+
+      <input type="email" placeholder="Email"><br>
+      <input type="password" placeholder="Password"><br>
+
+      <button class="submit">Login</button>
+
+      <p>Don't have an account? <a href="register.html">Register</a></p>
+      <a href="index.html"></a>
+    </form>
+
+  </div>
+</body>
+
+</html>

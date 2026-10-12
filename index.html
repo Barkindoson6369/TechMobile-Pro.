@@ -2,227 +2,404 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="Ab.jpg.jpg">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="AB.jpg" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
 </head>
+
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-  body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
-    color: white;
-  }
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+        color: white;
+    }
 
-  nav {
-    background: #0e1525;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    align-items: center;
-    position: fixed;
-  }
 
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    margin-left: 12px;
-  }
+    nav {
+        background: #0e1525;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5px 5px;
+        align-items: center;
+        text-align: center;
+        font-size: 22px;
+    }
 
-  a:hover {
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 22px;
-  }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        justify-content: space-between;
+        padding-left: 12px;
+        transition: 0.4s;
 
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 10%;
-    scroll-behavior: smooth;
-  }
+    }
 
-  .hero-text h1 {
-    font-size: 3rem;
-  }
+    a:hover {
+        background: rgb(19, 171, 218);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 12px;
+        color: white;
+        font-size: 20px;
+        align-items: center;
+        cursor: pointer;
+    }
 
-  .hero-text h2 {
-    color: #38bdf8;
-    margin: 10px 0;
-    font-size: 25px;
-  }
+    .btn {
+        background: rgb(19, 171, 218);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 12px;
+        color: white;
+        font-size: 19px;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 
-  p {
-    font-size: 22px;
-  }
+    .btn:hover {
+        background: #38a2cf;
+    }
 
-  img {
-    width: 100px;
-    border-radius: 80%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 5px solid rgb(19, 171, 218);
-    display: block;
-    cursor: pointer;
-  }
+    .home {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        padding: 10px;
+        flex-wrap: wrap;
+        scroll-behavior: smooth;
+        margin-bottom: 15px;
+    }
 
-  button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    background: #38bdf8;
-    color: white;
-    cursor: pointer;
-    margin-top: 5%;
-    font-size: 22px;
-  }
+    p {
+        font-size: 25px;
+    }
 
-  section {
-    padding: 80px 10%;
-  }
 
-  h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #38bdf8;
-  }
+    h2 {
+        color: #38bdf8;
+        text-align: center;
+        font-size: 32px;
+        margin: 30px 30px;
+    }
 
-  h3 {
-    font-size: 30px;
-  }
+    h3 {
+        color: rgb(91, 209, 245);
 
-  p {
-    font-size: 26px;
-  }
+    }
 
-  .skills {
-    font-size: 22px;
-  }
+    .about {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        flex-wrap: wrap;
+        scroll-behavior: smooth;
+        margin-bottom: 15px;
+    }
 
-  .project {
-    background: #1e293b;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    scroll-behavior: smooth;
-  }
+    .services {
+        padding: 80px 20px;
+        text-align: center;
+        height: 60vh;
+        margin-bottom: 15px;
+    }
 
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #0f172a;
-  }
+
+    .services-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px 50px;
+        flex-wrap: wrap;
+        height: 60vh;
+        font-size: 22px;
+        padding: 1rem 5%;
+        scroll-behavior: smooth;
+
+    }
+
+    .card {
+        background: #1e293b;
+        color: white;
+        text-align: center;
+        width: 300px;
+        height: 120px;
+        gap: 30px;
+        padding: 30px;
+        margin-top: 50px;
+        font-size: 22px;
+        border-radius: 10px;
+        box-shadow: 1px 1px rgb(19, 171, 218);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        box-shadow: 0.5px 0.5px 4px 4px rgb(19, 171, 218);
+    }
+
+    .Skills {
+        max-width: 800px;
+        margin-top: 10px 50px;
+        flex-wrap: wrap;
+        margin: auto;
+        height: 45vh;
+        margin-top: 10px 50px;
+        align-items: center;
+        font-size: 22px;
+        flex-wrap: wrap;
+        padding: 1rem 5%;
+        scroll-behavior: smooth;
+    }
+
+    .my-skill {
+        margin: 50px 50px;
+        text-align: center;
+    }
+
+    .skill {
+        color: rgb(19, 171, 218);
+        font-size: 22px;
+        margin: 20px 2;
+
+    }
+
+    .bar {
+        background: #1e293b;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .bar div {
+        color: white;
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .html {
+        width: 80%;
+        background: rgb(19, 171, 218);
+    }
+
+    .css {
+        width: 70%;
+        background: #38bdf8;
+    }
+
+    .js {
+        width: 60%;
+        background: rgb(218, 144, 8);
+        color: black;
+    }
+
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .contact {
+        height: 60vh;
+        text-align: center;
+        color: black;
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+
+    .contact h2 {
+        text-align: center;
+        font-size: 32px;
+        margin: 30px 30px;
+    }
+
+    .contact form {
+        max-width: 500px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 16px;
+        margin: 10px 0;
+        outline: none;
+        font-size: 25px;
+        font-size: 19px;
+        color: white;
+        border: solid #38bdf8 1px;
+        border-radius: 20px;
+        background: transparent;
+
+    }
+
+    input::placeholder {
+        color: white;
+    }
+
+    textarea::placeholder {
+        color: white;
+    }
+
+    .submit {
+        background: #38bdf8;
+        color: white;
+        height: 70px;
+        width: 200px;
+        font-size: 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            background: rgb(17, 134, 212);
+        }
+    }
+
+
+
+    footer {
+        background: #0f172a;
+        text-align: center;
+        padding: 20px;
+        border: 2px;
+        font-size: 22px;
+    }
 </style>
 
 <body>
+    <nav>
+        <div class="left">
+            <h2 class="h2">Portfolio</h2>
+        </div>
 
+        <div class="center">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
 
+        <div class="right">
 
-  <nav>
-    <div class="left">
-      <h2>Abdulwahab Barkindo</h2>
-    </div>
+            <a href="Login.html" class="btn"><button class="btn">Login</button></a>
+        </div>
+    </nav>
 
-    <div class="Right">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <section id="home" class="home">
+        <h2>Home</h2>
+        <p>
+            Welcome to my site
+            I am Abdulwahab Barkindo, a Computer
+            Science student from Taraba State University and aspiring
+            Frontend Developer. <br> I enjoy building responsive websites using
+            HTML, CSS, and JavaScript.
+        </p>
+    </section>
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Abdulwahab Barkindo</h1>
-      <h2>Computer Science Student & Web Developer</h2>
-      <p>
-        Passionate about Web Development, Technology,
-        and Problem Solving.
-      </p>
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p> I am Abdulwahab Barkindo, a Computer Science student and aspiring
+            Frontend Developer. I enjoy building responsive websites using
+            HTML, CSS, and JavaScript.
+        </p>
+    </section>
 
-      <button>View Projects</button>
-    </div>
-    <div>
-      <img src="Ab.jpg.jpg" alt="">
-    </div>
-  </section>
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creating beautiful and responsive website designs.</p>
+            </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      My name is Abdulwahab Barkindo. I am a Computer Science student
-      passionate about Web Development, Technology, and Problem Solving.
-      I have experience in HTML, CSS, and basic JavaScript. I also work
-      as a phone technician and enjoy learning new technologies.
-    </p>
-  </section>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Building websites using HTML, CSS, and JavaScript.</p>
 
-  <section id="skills">
-    <h2>Skills</h2>
+            </div>
 
-    <div class="skills">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-      <div>Responsive Design</div>
-      <div>Phone Repair</div>
-    </div>
-  </section>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly interfaces with Figma.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <section id="skills" class="Skills">
+        <h2 class="my-skill">My Skills</h2>
 
-    <div class="project">
-      <h3>Calculator App</h3>
-      <p>A simple calculator built with HTML, CSS and JavaScript.</p>
-    </div>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar">
+                <div class="html">85%</div>
+            </div>
+        </div>
 
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio website showcasing my skills and projects.</p>
-    </div>
-  </section>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar">
+                <div class="css">75%</div>
+            </div>
+        </div>
 
-  <section id="education">
-    <h2>Education</h2>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar">
+                <div class="js">60%</div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-      B.Sc Computer Science<br>
-      Taraba State University, Jalingo In Progressing
-    </p>
+    <section id="contact" class="contact">
+        <h2>Contact me</h2>
 
-    <p>
-      Diploma in Computer Engineering
-    </p>
-  </section>
+        <form>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="text" placeholder="Your Email"> <br>
+            <textarea placeholder="Your Message" rows="5"></textarea> <br>
+            <button class="submit">Send Message</button>
+        </form>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
+    <footer>
+        <p>
+            &copy; 2026 Abdulwahab Barkindo. All Rights Reserved.
 
-    <p>Email:<a href="abdulwahabbarkindo65534032@gmail.com">
-        abdulwahabbarkindo65534032@gmail.com
-      </a>
-    </p>
-    <p>Location: Jalingo Taraba State, Nigeria</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Abdulwahab Barkindo. All Rights Reserved.</p>
-  </footer>
+        </p>
+    </footer>
 </body>
 
 </html>
