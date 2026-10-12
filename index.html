@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Ab.jpg.jpg">
+  <title>Portfolio</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    color: white;
+  }
+
+  nav {
+    background: #0e1525;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    position: fixed;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-left: 12px;
+  }
+
+  a:hover {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 22px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10%;
+    scroll-behavior: smooth;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text h2 {
+    color: #38bdf8;
+    margin: 10px 0;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  img {
+    width: 100px;
+    border-radius: 80%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid rgb(19, 171, 218);
+    display: block;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #38bdf8;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+    font-size: 22px;
+  }
+
+  section {
+    padding: 80px 10%;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  .skills {
+    font-size: 22px;
+  }
+
+  .project {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+  }
+</style>
+
+<body>
+
+
+
+  <nav>
+    <div class="left">
+      <h2>Abdulwahab Barkindo</h2>
+    </div>
+
+    <div class="Right">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Abdulwahab Barkindo</h1>
+      <h2>Computer Science Student & Web Developer</h2>
+      <p>
+        Passionate about Web Development, Technology,
+        and Problem Solving.
+      </p>
+
+      <button>View Projects</button>
+    </div>
+    <div>
+      <img src="Ab.jpg.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      My name is Abdulwahab Barkindo. I am a Computer Science student
+      passionate about Web Development, Technology, and Problem Solving.
+      I have experience in HTML, CSS, and basic JavaScript. I also work
+      as a phone technician and enjoy learning new technologies.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>Responsive Design</div>
+      <div>Phone Repair</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Calculator App</h3>
+      <p>A simple calculator built with HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website showcasing my skills and projects.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <p>
+      B.Sc Computer Science<br>
+      Taraba State University, Jalingo In Progressing
+    </p>
+
+    <p>
+      Diploma in Computer Engineering
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email:<a href="abdulwahabbarkindo65534032@gmail.com">
+        abdulwahabbarkindo65534032@gmail.com
+      </a>
+    </p>
+    <p>Location: Jalingo Taraba State, Nigeria</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Abdulwahab Barkindo. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
